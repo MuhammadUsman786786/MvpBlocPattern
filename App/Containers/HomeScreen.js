@@ -7,6 +7,7 @@ import {
   Text,
   View,
 } from 'react-native';
+
 import {useDispatch, useSelector} from 'react-redux';
 import {FETCH_USERS} from '../Redux/UserRedux';
 import {usersInfoSelector} from '../Redux/Selectors';
