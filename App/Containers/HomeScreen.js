@@ -47,6 +47,7 @@ const HomeScreen = props => {
     <View style={styles.container}>
       <Button title={'Fetch Users 200 records'} onPress={onPress} />
       {fetchUsersLoading && <ActivityIndicator style={styles.loadingStyle} />}
+      <Text testID='testItemId'>Test Text</Text>
       <FlatList
         data={users}
         renderItem={renderItem}

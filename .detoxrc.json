@@ -1,0 +1,12 @@
+{
+  "testRunner": "mocha",
+  "runnerConfig": "e2e/.mocharc.json",
+  "configurations": {
+    "ios": {
+      "type": "ios.simulator",
+      "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/mvp.app",
+      "build": "xcodebuild -workspace ios/mvp.xcworkspace -configuration Debug -scheme mvp -derivedDataPath ios/build",
+      "name": "iPhone 8"
+    }
+  }
+}
